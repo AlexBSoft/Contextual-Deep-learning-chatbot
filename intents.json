@@ -1,0 +1,42 @@
+{"intents": [
+        {"tag": "привет",
+         "patterns": ["Привет", "Здравствуйте", "Здрасьте", "Хай","Приветствую","Hello","Hi","Здравия желаю","Здравия желаю","Доброе утро","Добрый день","Добрый вечер"],
+         "responses": ["Здравия желаю.", "Приветствую граждан.", "Доброе времени суток, славяне."],
+         "context_set": ""
+        },
+        {"tag": "пока",
+         "patterns": ["Пока", "До свиданья", "Goodbye", "Досвиданья", "До свидания", "До свидание"],
+         "responses": ["Не прощаюсь", "Удачного дня."]
+        },
+		{"tag": "дела",
+         "patterns": ["как дела?", "что нового?"],
+         "responses": ["Как обычно все клубнично."]
+        },
+        {"tag": "спасибо",
+         "patterns": ["Спасибо", "Thank you", "That's helpful", "Благодарю"],
+         "responses": ["Пожалуйста", "Обращайтесь", "Рад помочь"]
+        },
+        {"tag": "обо",
+         "patterns": ["Кто тебя создал?", "Кто твой отец?", "Создатель" ],
+         "responses": ["Я супер крутой бот. Меня создал Алекс", "Одним майским вечером талантливый программист и просто гений решил создать бота..."]
+        },
+        {"tag": "имя",
+         "patterns": ["Как тебя зовут?", "Какого твое имя?", "Какое твое имя?", "Кто ты?" ],
+         "responses": ["Я Товарищ Майор, супер крутой бот.", "Называйте меня Товарищ Майор. Я буду следить за вами."]
+        },
+        {"tag": "opentoday",
+         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "rental",
+         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
+         "responses": ["Are you looking to rent today or later this week?"],
+         "context_set": "rentalday"
+        },
+        {"tag": "today",
+         "patterns": ["today"],
+         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
+         "context_filter": "rentalday"
+        }
+   ]
+}
